@@ -12,48 +12,60 @@ Entre cada impresión debe haber una línea blanca.
 */
 
 #include<iostream>
+#include<conio.h>
 #include "digitalnumbers.h"
-//#include "digitalnumbers2.h"
+#include "vectorizar.h"
+#include "selector.h"
+
 using namespace std;
+
+int index;
 
 int main() {
 	cout << "*********************************************************************" << endl;
 	cout << " Programa para generar en pantalla numeros al estilo de pantalla LCD" << endl;
 	cout << "*********************************************************************" << endl << endl;
-	cout << "Digite un numero:" << endl << "del 1 al 10 antes de la coma" << endl; 
-	cout << "despues de la coma no debe exceder los 5 digitos: ";
-	cin >> size;
-	cout << "\r,";
-	cin >> numero;
-	cout << endl;
-	uno(10);
-	cout << endl;
-	dos(10);
-	cout << endl;
-	tres(10);
-	cout << endl;
-	cuatro(10);
-	cout << endl;
-	cinco(10);
-	cout << endl;
-	seis(10);
-	cout << endl;
-	siete (10);
-	cout << endl;
-	ocho(10);
-	cout << endl;
-	nueve(10);
-	cout << endl;
-	cero(10);
-	cout << endl;
+	cout << "Presione cualquier tecla para continuar";
+	getch();
+	inicio:
+	do {
+		system ("cls");
+		cout << "Introduzca el tamaño con un numero entre 1 y 10: ";
+		cin >> size;
+		if (size == 0) {
+			system ("cls");
+			cout << "Introduzca 0 para salir del programa: " << size << ",";
+			cin >> numero;
+			if (numero == 0) {
+				exit(-1);
+			} else {
+				cout << "\nEl programa iniciará nuevamente";
+				goto inicio;
+			}
+		}
+	} while (size > 10 || size < 1 );
+			
+	do {
+		system ("cls");
+		cout << "Introduzca el numero que aparecerá en pantalla," << endl << "debe ser entre 10000 y 99999: " << size << ",";
+		cin >> numero;
+	} while (numero > 99999 || numero < 10000 );
 	
-	return 0;
+	system ("cls");
+
+//cout << vectorizado[0] << endl;
+vectorizar(numero);
+
+selector(vectorizado[0]);
+selector(vectorizado[1]);
+selector(vectorizado[2]);
+selector(vectorizado[3]);
+selector(vectorizado[4]);
+
+cout << endl;
+for (index = 1; index <= 60; index ++ ) {
+	cout << "-";	
 }
 
-
-/*
-
-|
-|
-|*/
-
+	return 0;
+}

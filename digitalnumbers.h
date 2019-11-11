@@ -1,28 +1,25 @@
 #include<iostream>
 using namespace std;
 
-int size;
-int numero, i;
-
 int uno (int size) {
 	switch (size) {
 		case 1:
 			// C = 5  f = 5
-			cout << "   | " << endl;
-			cout << "   | " << endl;
-			cout << "   | " << endl;
-			cout << "   | " << endl;
-			cout << "   | " << endl;
+			cout << "   | " << endl; //1
+			cout << "   | " << endl; //2
+			cout << "   | " << endl; //3
+			cout << "   | " << endl; //4
+			cout << "   | " << endl; //5
 			break;
 		case 2:
 			// C = 6  f = 7
-			cout << "    | " << endl;
-			cout << "    | " << endl;
-			cout << "    | " << endl;
-			cout << "    | " << endl;
-			cout << "    | " << endl;
-			cout << "    | " << endl;
-			cout << "    | " << endl;
+			cout << "    | " << endl; //1
+			cout << "    | " << endl; //2
+			cout << "    | " << endl; //3
+			cout << "    | " << endl; //4
+			cout << "    | " << endl; //5
+			cout << "    | " << endl; //6
+			cout << "    | " << endl; //7
 			break;
 		case 3:
 			// C = 7  f = 9
@@ -261,13 +258,13 @@ int dos (int size) {
 		case 7:
 			// C = 11  f = 17
 			cout << "  -------  " << endl; 
-			cout << "         | " << endl; //2
-			cout << "         | " << endl; //3
-			cout << "         | " << endl; //4
-			cout << "         | " << endl; //5
-			cout << "         | " << endl; //6
-			cout << "         | " << endl; //7
-			cout << "         | " << endl; //8
+			cout << "         | " << endl;
+			cout << "         | " << endl; 
+			cout << "         | " << endl; 
+			cout << "         | " << endl; 
+			cout << "         | " << endl; 
+			cout << "         | " << endl; 
+			cout << "         | " << endl; 
 			cout << "  -------  " << endl; 
 			cout << " |         " << endl; 
 			cout << " |         " << endl; 
@@ -303,15 +300,15 @@ int dos (int size) {
 		case 9:
 			// C = 13  f = 21
 			cout << "  ---------  " << endl; 
-			cout << "           | " << endl; //2
-			cout << "           | " << endl; //3
-			cout << "           | " << endl; //4
-			cout << "           | " << endl; //5
-			cout << "           | " << endl; //6
-			cout << "           | " << endl; //7
-			cout << "           | " << endl; //8
-			cout << "           | " << endl; //9
-			cout << "           | " << endl; //10
+			cout << "           | " << endl; 
+			cout << "           | " << endl; 
+			cout << "           | " << endl; 
+			cout << "           | " << endl; 
+			cout << "           | " << endl; 
+			cout << "           | " << endl;
+			cout << "           | " << endl; 
+			cout << "           | " << endl; 
+			cout << "           | " << endl;
 			cout << "  ---------  " << endl; 
 			cout << " |           " << endl; 
 			cout << " |           " << endl; 
@@ -327,15 +324,15 @@ int dos (int size) {
 		case 10:
 			// C = 14  f = 23
 			cout << "  ----------  " << endl; 
-			cout << "            | " << endl; //2
-			cout << "            | " << endl; //3
-			cout << "            | " << endl; //4
-			cout << "            | " << endl; //5
-			cout << "            | " << endl; //6
-			cout << "            | " << endl; //7
-			cout << "            | " << endl; //8
-			cout << "            | " << endl; //9
-			cout << "            | " << endl; //10
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
+			cout << "            | " << endl; 
 			cout << "  ----------  " << endl; 
 			cout << " |            " << endl; 
 			cout << " |            " << endl; 
