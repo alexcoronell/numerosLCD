@@ -30,11 +30,11 @@ int main() {
 	inicio:
 	do {
 		system ("cls");
-		cout << "Introduzca el tamaño con un numero entre 1 y 10 ( 0 pasa Salir del Programa). Presione ENTER: ";
+		cout << "\nIntroduzca el tamaño con un numero entre 1 y 10 ( 0 pasa Salir del Programa). Presione ENTER: ";
 		cin >> size;
 		if (size == 0) {
 			system ("cls");
-			cout << "Introduzca 0 para confirmar salida del programa: " << size << ",";
+			cout << "\nIntroduzca 0 para confirmar salida del programa: " << size << ",";
 			cin >> numero;
 			if (numero == 0) {
 				cout << "Saliendo del programa" << endl << endl;
@@ -48,7 +48,7 @@ int main() {
 			
 	do {
 		system ("cls");
-		cout << "Introduzca el numero que aparecerá en pantalla y presione ENTER," << endl << "debe ser entre 10000 y 99999: " << size << ",";
+		cout << "\nIntroduzca el numero que aparecera en pantalla y presione ENTER," << endl << "debe ser entre 10000 y 99999: " << size << ",";
 		cin >> numero;
 	} while (numero > 99999 || numero < 10000 );
 	
@@ -58,9 +58,13 @@ int main() {
 vectorizar(numero);
 
 selector(vectorizado[0]);
+cout << endl;
 selector(vectorizado[1]);
+cout << endl;
 selector(vectorizado[2]);
+cout << endl;
 selector(vectorizado[3]);
+cout << endl;
 selector(vectorizado[4]);
 
 cout << endl;
