@@ -37,6 +37,7 @@ int main() {
 			cout << "Introduzca 0 para salir del programa: " << size << ",";
 			cin >> numero;
 			if (numero == 0) {
+				cout << "Saliendo del programa" << endl << endl;
 				exit(-1);
 			} else {
 				cout << "\nEl programa iniciará nuevamente";
@@ -66,6 +67,7 @@ cout << endl;
 for (index = 1; index <= 60; index ++ ) {
 	cout << "-";	
 }
-
+getch();
+goto inicio;
 	return 0;
 }
