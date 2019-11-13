@@ -3,7 +3,6 @@ using namespace std;
 
 int numero;
 int vectorizado[5];
-int decenamil, unidadmil, centena, decena, unidad;
 
 int vectorizar(int numero) {
 	vectorizado[0] = (numero/10000);
