@@ -11,15 +11,7 @@ int vectorizar(int numero) {
 	vectorizado[2] = ((numero%1000)/100);
 	vectorizado[3] = ((numero%100)/10);
 	vectorizado[4] = (numero%10);
-	//unidadmil = ((numero%10000)*1000);
 	cout << endl;
 
-	decenamil = vectorizado[0];
-	unidadmil = vectorizado[1];
-	centena = vectorizado[2];
-	decena = vectorizado[3];
-	unidad = vectorizado[4];
-
-	
 	return 0;
 }

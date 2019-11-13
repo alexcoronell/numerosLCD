@@ -30,11 +30,11 @@ int main() {
 	inicio:
 	do {
 		system ("cls");
-		cout << "Introduzca el tamaño con un numero entre 1 y 10: ";
+		cout << "Introduzca el tamaño con un numero entre 1 y 10 ( 0 pasa Salir del Programa). Presione ENTER: ";
 		cin >> size;
 		if (size == 0) {
 			system ("cls");
-			cout << "Introduzca 0 para salir del programa: " << size << ",";
+			cout << "Introduzca 0 para confirmar salida del programa: " << size << ",";
 			cin >> numero;
 			if (numero == 0) {
 				cout << "Saliendo del programa" << endl << endl;
@@ -48,7 +48,7 @@ int main() {
 			
 	do {
 		system ("cls");
-		cout << "Introduzca el numero que aparecerá en pantalla," << endl << "debe ser entre 10000 y 99999: " << size << ",";
+		cout << "Introduzca el numero que aparecerá en pantalla y presione ENTER," << endl << "debe ser entre 10000 y 99999: " << size << ",";
 		cin >> numero;
 	} while (numero > 99999 || numero < 10000 );
 	
@@ -67,6 +67,7 @@ cout << endl;
 for (index = 1; index <= 60; index ++ ) {
 	cout << "-";	
 }
+cout << endl << "Presione cualquier tecla para continuar";
 getch();
 goto inicio;
 	return 0;
